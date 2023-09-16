@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+        body {
+            padding: 0;
+        }
+        h1{
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        h2{
+            color: aliceblue;
+            font-size: 1.45em;
+            margin-bottom: 20px;
+        }
+        #demo{
+            color: red;
+            opacity: 0.7;
+            font-size: 1.3em;
+        }
+        .bg{
+            margin: auto;
+            width: 100%;
+            height: auto;
+            margin-bottom: 50px;
+        }
+        .bg > p{
+            font-size: 0.96em;
+            line-height: 1.5em;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .product{
+            margin: auto;
+            width: 100%;
+            padding: 0px;
+            margin-bottom: 80px;
+        }
+        .product > p{
+            font-size: 0.96em;
+            line-height: 1.5em;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .product > button {
+            display: block;
+            margin: auto;
+            background: #0076ff;
+            padding: 8px;
+            width: 35%;
+            border: none;
+            border-radius: 2px;
+            outline: none;
+        }
+        .product > button > a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+        img{
+            width: 100%;
+            max-width: 500px;
+        }
+        #sub{
+            min-height: 40vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, dear Customer!</h1>
+    <h2 id="demo"></h2> 
+     
+    <div class="bg">
+        <img src="img/users.png" alt="">
+        <p>
+            Torquentin noluisse pro justo senectus animal tacimates cetero assueverit civibus rhoncus.  Rutrumipsum finibus veniam doctus sapien nibh inceptos quisque nostra ponderum eripuit scripta numquam.  Civibusmalorum commodo nullam ornare pulvinar iusto eget quaestio nascetur orci nec vulputate rhoncus electram mauris.  
+        </p>
+    </div>
+    
+    <h2>Buy Data</h2>
+    <div class="product">
+        <img id="sub" src="img/data-sub.jpg" alt="">
+        <p>Fermentum nisl quo senectus voluptaria habeo taciti singulis vitae conceptam dolore suspendisse delenit posse dictas audire morbi aperiri ex nonumy noluisse cubilia reque sonet vel indoctum possim delectus hac.</p>
+        
+        <button><a href="https://www.facebook.com/henry.ani.9279">Contact me here...</a></button>
+    </div>
+    
+    <h2>Become a Vendor</h2>
+    <div class="product">
+        <img src="img/henry.jpg" alt="">
+        <p>Fringilla explicari elaboraret mel intellegebat ligula iuvaret melius an utinam dissentiunt iuvaret vero conclusionemque equidem laudem torquent vestibulum latine porro adipiscing aperiri rhoncus verear sem errem omnesque dolore evertitur omnesque phasellus velit altera esse inimicus ultricies habitasse doming sonet possim prompta pro ceteros in hendrerit mattis nisl interesset efficiantur reprehendunt.</p>
+        
+        <button><a href="https://wa.me/message/3KUCS2AZDMALD1">Click here...</a></button>
+    </div>
+    
+    <div class="header">
+        <p>Powered by </p>
+        <img class="logo" src="img/henritek.png" alt="Logo">
+    </div>
+    
+     <script> 
+        var today = new Date();
+        var curHr = today.getHours();
+        
+         if (curHr >= 0 && curHr < 6) { 
+         document.getElementById("demo").innerHTML = 'What are you doing that early?'; 
+         } 
+         else if (curHr >= 6 && curHr <= 12) { 
+         document.getElementById("demo").innerHTML = 'Good Morning'; 
+         } 
+         else if (curHr >= 12 && curHr < 15) { document.getElementById("demo").innerHTML = 'Good Afternoon'; 
+         } 
+         else { document.getElementById("demo").innerHTML = 'Good Evening'; 
+    }
+     </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+    
+    <div id="network-status">
+        <p> Welcome back,  <span id="demo"></span></p> 
+    </div>
+    
+    <h1>Sign Up</h1>
+    
+    <div class="container" id="blur">
+        
+        <form id="myForm" action="#" method="post">
+            <label>
+                <i class="material-icons">account_circle</i>
+                <input id="fullname" type="text" autocapitalize="words"  placeholder="Enter your full name..." required>
+            </label>
+            
+            <label>
+                <i class="material-icons">face</i>
+                <input id="username" type="text" placeholder="Enter a unique username..." required>
+            </label>
+            
+            <label>
+                <i class="material-icons">email</i>
+                <input id="email" type="email" autocomplete="on" placeholder="Enter your email..." required>
+            </label>
+            
+            <label>
+                <i class="material-icons">
+phone
+</i>
+                <input id="phone" type="number" maxlength="11" minlength="11" placeholder="Enter your phone number..." required>
+            </label>
+            
+            <label>
+                <i class="material-icons">lock</i>
+                <input id="password" oninput="validate();" type="password" placeholder="Enter password..." required>
+               
+            </label>
+            
+            <label>
+            
+                <input id="c-password" oninput="validate();" type="password" placeholder="Confirm password..." required>
+                <p id="para"></p>
+            </label>
+            
+            <p>Already a customer? <a href="login-page.htm">Login here.</a></p>
+            <button id="s-btn" type="submit" onclick="toggle();">Sign up</button>
+        </form>
+    </div>
+    
+    <div id="popup">
+        <img id="success" src="img/awesome-spinner.gif" alt="#">
+    </div>    
+    
+    <div class="header">
+        <p>Powered by </p>
+        <img class="logo" src="img/henritek.png" alt="Logo">
+    </div>
+    
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

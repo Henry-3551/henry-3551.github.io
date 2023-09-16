@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .bg{
+            margin: auto;
+            width: 70%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        p{
+            text-align: center;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign up Successful!</h1>
+    <p>You'll be redirected to the user page in...<span id="countDown"></span></p>
+    <div class="bg">
+        <img src="img/success.jpg" alt="">
+    </div>
+    <div class="header">
+        <p>Powered by </p>
+        <img class="logo" src="img/henritek.png" alt="Logo">
+    </div>
+    
+    <script>
+        var x = 10;
+      
+      var myInterval = setInterval(function() {
+         
+         x -= 1;
+         document.getElementById("countDown").innerHTML = x;
+      }, 1000);
+        
+        setTimeout(function () {
+            
+window.location.replace('user-page.htm');
+     }, 10500);
+    </script>
+</body>
+</html>
