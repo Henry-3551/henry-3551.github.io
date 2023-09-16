@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #173459;
+    padding-top: 40px;
+    padding: 15px;
+    min-height: auto;
+    text-align: center;
+    font-family: vedana;
+}
+#body{
+    overflow: scroll;
+}
+#network-status{
+    display: block;
+    margin: auto;
+}
+.header{
+    background: none;
+    width: 100;
+}
+.header > p{
+    text-align: center;
+}
+.logo{
+    width: 30%;
+}
+h1{
+    color: aliceblue;
+    font-size 1.25em;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+p{
+    color: aliceblue;
+    font-size: 0.80em;
+    text-align: right;
+    margin-bottom: 30px;
+}
+#forgot{
+    margin-top: -10px;
+}
+#para{
+    color: green;
+    font-size: 0.75em;
+}
+a{
+    color: #0076ff;
+}
+span{
+    color: red;
+    margin-left: 3px;
+    opacity: 0.9;
+}
+.container{
+padding-top: 20px;
+    padding: 15px;
+    text-align: center;
+    border: 0.5px solid white;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+.container#blur.active{
+    filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+label{
+    text-align: left;
+}
+i {
+         min-width: 40px;
+         padding: 5px;
+         text-align: center;
+         color: #0076ff;
+      }
+input{
+    background: aliceblue;
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+input:focus{
+    border: 2px solid #0076ff;
+}
+#phone{
+    margin-bottom: 30px;
+}
+#c-password{
+    margin-bottom: 5px;
+}
+button{
+    display: block;
+    background: #0076ff;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+button:active{
+    opacity: 0.46;
+}
+#popup{
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+}
+#popup > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+#popup.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.2s;
+}
+
